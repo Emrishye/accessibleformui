@@ -1,0 +1,141 @@
+:root {
+  --primary-color: #fff;
+  --shadow-color: #ff7e5f;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  line-height: 1.5;
+  background: linear-gradient(
+    to right,
+    #ff7e5f,
+    #feb47b
+  ); /* Gradient from left to right */
+  height: 100vh;
+}
+
+i {
+  color: black;
+  position: absolute;
+  left: 85%;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border: 2px solid #333;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: #257180;
+  color: var(--primary-color);
+
+  /* max-width: 1000px; */
+}
+
+form .field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+}
+small {
+  color: #e96d6d;
+  font-weight: bold;
+}
+input {
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: none;
+}
+input[type="email"] {
+  border: 2px solid #e96d6d;
+}
+input::placeholder {
+  color: gray;
+  font-style: italic;
+}
+input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 8px rgb(72, 255, 0); /* Add a glowing effect */
+  outline: none;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#email::placeholder {
+  color: #e96d6d;
+}
+.strike {
+  text-decoration: line-through;
+  font-size: 0.75rem;
+  color: #888888;
+}
+.info span {
+  font-size: 0.75rem;
+}
+form button {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  background-color: #333;
+  color: #fff;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 90%;
+  font-family: cursive;
+
+  cursor: pointer;
+}
+.completeness {
+  text-align: center;
+  height: 300px;
+  /* max-width: 500px; */
+}
+
+.completeness .progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.info p {
+  margin: 10px 0;
+}
+.completeness .list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #deaa79;
+  border-radius: 20px;
+  padding: 10px;
+  height: 190px;
+  text-align: justify;
+}
+.list span {
+  margin-bottom: 5px;
+}

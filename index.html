@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Building accessible ui from scrach" />
+    <meta name="keywords" content="Form, CSS, HTML, Accessible, UI, Form" />
+    <meta name="author" content="Emran" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Form UI</title>
+  </head>
+  <body>
+    <section class="form-container">
+      <div class="wrapper">
+        <form>
+          <div class="field">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              aria-required="true"
+              placeholder="What should we call you?"
+            />
+          </div>
+          <div class="field email">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              aria-required="true"
+              placeholder="john@doe.com"
+            />
+            <small class="taken">Email is already taken</small>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" placeholder="xxxxxx" id="password" />
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <div class="field">
+            <label for="confiPassword">Confirm Password</label>
+            <input
+              type="password"
+              placeholder="xxxxxx"
+              aria-required="true"
+              id="confiPassword"
+            />
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <button type="submit">Update Profile</button>
+        </form>
+        <article class="completeness">
+          <div class="progress">
+            <h3>65%</h3>
+          </div>
+          <div class="info">
+            <p>Profile Completeness</p>
+            <div class="list">
+              <span class="strike">Create Account</span>
+              <span class="strike">Update Roadmap Progess</span>
+              <span class="strike">Setup Public Profile</span>
+              <span>Complete your first project</span>
+              <span>Invite your Friends</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>
